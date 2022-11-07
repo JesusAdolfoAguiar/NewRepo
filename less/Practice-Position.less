@@ -1,0 +1,168 @@
+* {
+    font-family: Ubuntu,Segoe UI,Helvetica,Verdana;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+h1 {
+  text-align: center;
+  color: #046ab5;
+}
+
+.bestseller-collapsible {
+    margin: 20px 0px;
+    font-weight: 700;
+    max-width: 100%;
+
+    &:hover {
+	    cursor: pointer;
+	    color: #046ab5;
+    }
+
+    &:after {
+	   	content: '\002B';
+	    color: black;
+	    font-weight: bold;
+	    margin-left:10px;
+    }
+}
+
+.bestseller-product-list {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+
+    .bestseller-product-item {
+	   	display: flex;
+	    justify-content: center;
+	    flex-direction: column;
+	    width: 80%;
+	    margin-bottom: 20px;
+	    min-height: 200px;
+	    background-color: #fff;
+	    box-shadow: 3px 3px 10px #00000030;
+
+	    .bestseller-content {
+
+		    width: 90%;
+		    height: 100%;
+		    margin: 0 auto;
+		    padding: 0 10px;
+		    display: flex;
+		    justify-content: center;
+		    flex-direction: column;
+
+		    .bestseller-responsive {
+
+			   	display: flex;
+			    flex-flow: row nowrap;  
+			    justify-content: flex-start;
+			    align-items: flex-start;
+			    position: relative;
+			    width: 100%;
+
+			    .bestseller-image {
+
+			    	margin-right: 140px;
+
+			    	img {
+			    		max-width: 100%;
+			    	}
+			    }
+			    .bestseller-information {
+					display: flex;
+					flex-direction: column;
+
+					.product-tile {
+						display: flex;
+						justify-content: flex-start;
+					}
+
+					.product-name {
+						font-weight: 500;
+					}
+
+					.product-price {
+						display: block;
+					    margin: 20px 0 10px;
+
+					    .price-box {
+						    display: flex;
+						    flex-flow: row wrap;
+						    justify-content: flex-start;
+						    align-items: center;
+						    position: relative;
+						    margin-bottom: 15px;
+
+							.msrp {		
+							    margin-right: 5px;
+							    position: relative;
+							    top: auto;
+							    right: auto;
+							    font-weight: 500;
+							    font-size: 18px;
+							    color: #000;
+							    line-height: 21px;
+							}
+
+							.old-price {
+								display: flex;
+							    align-items: center;
+							    font-size: 18px;
+							    line-height: 21px;
+							    font-weight: 500;
+							    color: #6d8fa0;
+							    text-decoration: line-through;
+							}
+
+							.final-price {
+							    display: flex;
+							    align-items: flex-start;
+							    color: #046ab5;
+							    line-height: 29px;
+							    font-size: 25px;
+							    width: 100%;
+							    margin-top: 10px;
+							    order: 3;
+							}
+
+					    }
+					}
+
+					.norton-guarantee {
+						display: block;
+	    				margin-bottom: 20px;
+
+	    				img {
+	    					max-width: 100%;
+	    				}
+					}
+			    }
+			    
+		    }
+
+	 	}
+	 	@media screen and (max-width: 900px) {
+		 	padding: 0 0 20px;
+	        margin-bottom: 30px;
+			flex-wrap: inherit;
+
+	        .bestseller-content {
+	        	flex-wrap: inherit;
+	        	.bestseller-responsive {
+	        		flex-wrap: inherit;
+	        		.best-seller-image {
+	        			max-width: 300px;
+	        		}
+	        		.bestseller-information {
+	        			width: 455px;
+        				margin: 0 20px 0 0;
+	        		}
+	        		
+	        	}
+	        }
+	 	}
+	}
+}

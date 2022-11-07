@@ -1,0 +1,80 @@
+﻿/*Images:
+    img: html, when img is part of the content. e.g.: portfolio, statistics results, etc. It can be used:
+    If you rely on browser scaling to render an image in proportion to text size.
+    Improve performance of animations over a background.
+
+    background image: : css, when img is for asthetic purposes It can be used:
+        When doing image-replacement of text eg. paragraphs/headers. 
+        If you need to improve download times, as with CSS sprites. 
+        If you need for only a portion of the image to be visible. 
+        background-image with background-size:cover in order to stretch a background image to fill its entire window */
+
+* {
+    box-sizing: border-box; /* This makes all boxes maintain the width/height,
+                            regardless of the padding */
+    font-family: Ubuntu,Segoe UI,Helvetica,Verdana;
+}
+
+strong {
+    color: #046ab5
+}
+ul {
+    line-height: 2; /* line-height sets the height of a line box. It's commonly used to set the distance between lines of text. 
+                    On block-level elements, it specifies the minimum height of line boxes within the element. 
+                    On non-replaced inline elements, it specifies the height that is used to calculate line box heighSpacing for text */
+}
+
+.flex-container { /*Flexbox to include the logo and values divs*/
+    display: flex;
+}
+
+.logo {
+    flex: 50%;
+}
+
+.values {
+    flex: 50%;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 0px 80px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+button[name="reviewForm"]:hover { /* Change border color when hover*/
+    border-color: blue;
+}
+
+button[name="reviewForm"]:active { /* Change text color when click*/
+    color: red;
+}
+
+/* Positions
+    Static: Default value. Elements render in order, as they appear in the document. 
+            Usage:
+                E.g., For simple, single-column layouts where each element must sit on top of the next one.
+
+    Relative: set the object away 'x' pixels to the right, left, bottom
+              top from the static (default) position. 
+            Usage:
+               E.g., when you need ot move things up based on a reference point.  
+    
+    Fixed: relative to the viewport, so it always stays the same, even when page is scrolled. 
+            Usage:
+                E.g., a chat window, a logo, etc.
+
+    Absolute: positioned relative to the nearest positioned ancestor. 
+
+            Usage: 
+                 E.g., when you need to make nested elements.
+
+    Sticky: behaves like a relatively positioned element until a certain scroll point and then it acts like a fixed element. 
+            based on the user's scroll position.
+
+            Usage:
+                E.g., headings in an alphabetized list.
+                
+*/
+
+

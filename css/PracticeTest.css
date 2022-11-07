@@ -1,0 +1,101 @@
+
+* {
+    font-family: Ubuntu,Segoe UI,Helvetica,Verdana;
+}
+
+h1 {
+  text-align: center;
+  color: #046ab5;
+}
+
+.list li{
+  list-style-type: none;
+  margin-bottom: 10px;
+  background-color: #FFF;
+  box-shadow: 3px 3px 10px #00000030;
+}
+
+
+.collapsible {
+  background-color: #FFF;
+  color: black;
+  cursor: pointer;
+  padding: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+button.collapsible:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.content {
+  padding: 0 20px;
+  display: none;
+  overflow: hidden;
+  background-color: #FFF;
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.information li {
+  margin-bottom: 40px;
+  box-shadow:none;
+  list-style-type: none;
+}
+
+.information li.oldPprice {
+  text-decoration: line-through;
+}
+
+.information li.finalPrice {
+  color: #046ab5;
+}
+
+.buysafeseal_1_a {
+  border: 0px; 
+  margin: 0px; 
+  padding: 0px; 
+  height: auto; 
+  min-height: 0px; 
+  max-height: none; 
+  width: auto; 
+  min-width: 0px; 
+  max-width: none; 
+  vertical-align: bottom; 
+  cursor: pointer;
+}
+
+button {
+  background-color: #FFF;
+  cursor: pointer;
+  border: none;
+
+}
+
+button:hover {
+  color: #046ab5;
+}
+
+@media screen and (min-width: 720px) {
+
+  .information {
+    width: 270px;
+    margin-right: 10px;
+    display: block;
+  }
+
+}
+
