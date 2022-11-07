@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title> Softwarekeep </title>
+    <style>
+        .myDiv {
+
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Softwarekeep</h1>
+        <p>Power to the PC, Service to the people.</p>
+    </header>
+
+    <h2>What do we do?</h2>
+    <p>
+        SoftwareKeep provides
+        wholesale priced software
+        with year round service.
+    </p>
+
+    <ul>
+        <li>Instant Digital Download</li>
+        <li>Lifetime Product Guarantee</li>
+        <li>Year Round Service</li>
+    </ul>
+
+    <div class="myDiv">
+
+        <h2>We offer <span style="color:blue;font-weight:bold">certified</span> software products.</h2>
+
+        <p>Microsoft Office 2019 Home and Student</p>
+        <p>Microsoft Office 2019 Home and Business</p>
+
+        <img src="office2019hs.webp" alt="office2019hs"/>
+        <img src="office2019hb.webp" alt="office2019hb"/>
+
+    </div>
+
+    <section>
+        <h3>Products available</h3>
+        <table>
+            <tr>
+                <th>Software</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Microsoft Office 2019 Home and Student</td>
+                <td>$84.49</td>
+            </tr>
+            <tr>
+                <td>Microsoft Office 2019 Home and Business</td>
+                <td>$128.99</td>
+            </tr>
+        </table><br><br>
+
+
+
+        <label for="product">Choose a product:</label>
+        <select name="product" id="product">
+            <option value="office2019hs">Microsoft Office 2019 Home and Student</option>
+            <option value="office2019hb">Microsoft Office 2019 Home and Business</option>
+        </select><br><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="100"/>
+
+    </section>
+
+    <h3>Payment information</h3>
+    <form>
+
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"/>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"/><br><br>
+
+        <label for="email">Paypal Email :</label>
+        <input type="email" id="email" name="email"/><br><br>
+
+        <input type="checkbox" id="Terms" name="Terms" value="Agree"/>
+        <label for="Terms"> I accept the Terms of Service </label><br><br>
+
+        <button type="button" onclick="alert('Thanks for your purchase!')">Place Order</button>
+
+    </form>
+
+    <h3>Let us know how we can improve!</h3>
+    <form>
+
+        <textarea id="skreview" name="skreview" rows="4" cols="50"></textarea><br><br>
+        <button type="button" onclick="alert('Thanks for your feedvack!')">Submit Review</button>
+
+    </form><br><br>
+
+    <h6>Terms of service</h6>
+    <iframe src="https://softwarekeep.com/terms-and-conditions" title="Terms of Service"></iframe>
+        
+    <footer>
+        <p>
+            Author: Jesus Aguiar<br>
+            <a href="mailto:j.aguiar@softwarekeep.com">j.aguiar@softwarekeep.com</a>
+        </p>
+    </footer>
+</body>
+</html>
